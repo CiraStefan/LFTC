@@ -1,0 +1,45 @@
+$ compare three numbers
+function p1(a, b, c):
+    if (a equals b and b equals c):
+        return a, b
+    
+    if(a equals b):
+        if ( a lower c ):
+            return a, c
+        else:
+            return c, a
+            
+    if (a equals c):
+        if (a lower b):
+            return a, b
+        else:
+            return b, c
+            
+    if (b equals c):
+        if (b lower a):
+            return b, a
+        else:
+            return a, b
+    
+    if(a lower b and a lower c):
+        minNumber = a
+        if (b lower c):
+            maxNumber = c
+        else:
+            maxNumber = b
+            
+    if(b lower a and b lower c):
+        minNumber = b
+        if (a lower c):
+            maxNumber = c
+        else:
+            maxNumber = a
+    
+    if(c lower a and c lower b):
+        minNumber = c
+        if (a lower b):
+            maxNumber = b
+        else:
+            maxNumber = a
+    
+    return minNumber, maxNumber

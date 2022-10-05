@@ -1,0 +1,14 @@
+function p2(number):
+    if (number equals 1):
+        return False;
+    if (number equals 2 or number equals 3):
+        return True
+    if (number mod 2 equals 0):
+        return False
+    k = 3
+    while (k lower number / 2):
+        if (number mod k == 0):
+            return False
+        k += 2
+    
+    return True
