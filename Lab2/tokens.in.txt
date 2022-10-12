@@ -1,0 +1,20 @@
+	i) special symbols
+		a)operators + - * / = < <= == > >=
+		b)separators [] {} : ; space newline
+		c)reserved words: list char const do else if number of program input print then while def
+		d)reserved symbol # (for comments)
+	ii)identifiers
+		a)sequence of letters and digits, first character is a letter
+			identifier ::= letter | letter {letter} {digit}
+			letter ::= "A"|"B"|. ..|"Z"
+			digit ::= "0"|"1"|. ..|"9"
+	iii) constants
+
+RULES:
+	number ->	noconst := "+"no|"-"no|no
+			no := digit{no}
+	character-> character := 'letter'|'digit'
+
+	string ->	constchar := "string"
+			string := char{string}
+			char := letter|digit
