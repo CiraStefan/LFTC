@@ -1,0 +1,17 @@
+main ::= "def" "main" ":" "newline" {decllist} {stmtlist}
+decllist ::= declaration|declaration "newline" decllist
+declaration ::= IDENTIFIER "=" value
+value1 ::=  "number"|"character"|"string"
+value ::= value1 | arraydecl | expression
+arraydecl ::= IDENTIFIER "=" "[" {"value1"{","} } "]"
+stmtlist ::= decllist | structstmt
+structstmt ::= ifstmt | whilestmt
+ifstmt ::= "IF" "(" condition ")" ":" "newline" ["ELSE" [ifstmt]]
+whilestmt ::= "WHILE" "(" condition ")" ":" "newline" stmtlist
+confition ::= expression RELATION expression
+RELATION ::= "<" | "<=" | "==" | ">" | ">="
+expression ::= expression "+" term | expression "-" term | term
+term ::= term "*" factor | term "/" factor | factor
+factor ::= "(" expression ")" | IDENTIFIER
+
+

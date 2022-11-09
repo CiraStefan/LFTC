@@ -1,0 +1,10 @@
+def p3(x):
+    if (a === x):
+        return x
+    int a
+    
+    return x + a 
+
+
+$ def fails as it's python, not boa
+$ a === x is neither python, nor boa

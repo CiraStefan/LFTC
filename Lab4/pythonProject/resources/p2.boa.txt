@@ -1,0 +1,5 @@
+function gcd(x , y):
+    if y equals 0:
+        return x
+    else:
+        return gcd(y, x mod y)
