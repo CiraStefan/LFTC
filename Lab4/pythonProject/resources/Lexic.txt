@@ -1,0 +1,5 @@
+Alphabet:
+	a) Upper (A-Z) and lower case letters (a-z)
+	b) Underline character
+	c) Decimal digits
+	d) octothorp

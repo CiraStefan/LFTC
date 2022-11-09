@@ -1,0 +1,20 @@
+function -> declare a function
+, 	   -> separate parameters
+equals  -> comparison operator
+lower   -> comparison operator 
+bigger  -> comparison operator
+
+=          -> assignment operator
+
+and -> AND
+or -> OR
+
+return  -> return value
+
+mod     -> modulo operator
+
+if, else -> as usual
+
+$        -> comment symbol
+
+echo  -> print in console
